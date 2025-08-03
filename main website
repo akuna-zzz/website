@@ -1,0 +1,132 @@
+<html>
+
+<head>
+    <title>Website</title>
+    <style>
+        body {
+            background-image: url('C:/Users/hp/Desktop/websoite/maki.jpg');
+            background-size: cover;
+            position: relative;
+            margin:0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 50px;
+        }
+
+        .navlinks {
+            display: flex;
+            gap: 70px;
+        }
+
+        .navlinks a {
+            font-size: 30px;
+            color: white;
+            text-decoration: none;
+            background-color: transparent;
+        }
+
+        a:hover {
+            color: black;
+            transition: 0.3s ease;
+        }
+
+        .logo {
+            font-size: 40px;
+            color: white;
+        }
+        .searchbox{
+            display: flex;
+            gap:10px;
+        }
+        span{
+            color:red;
+            font-weight: bold;
+
+        }
+        .para{
+            font-size: 30px;
+            position: absolute;
+            top:50%;
+            left:9%;
+            color: white;
+            margin:0;
+            border: 10px;
+        }
+        .para p{
+            margin-top: 0;
+            text-shadow: 
+                2px 2px 0px black, 
+                -2px -2px 0px black,  
+                2px -2px 0px black,  
+                -2px 2px 0px black;
+        }
+        .para h1{
+            text-shadow: 
+                2px 2px 0px black, 
+                -2px -2px 0px black,  
+                2px -2px 0px black,  
+                -2px 2px 0px black;
+        }
+        .login-box {
+            padding: 20px;
+            border: 2px solid #000;
+            width: 300px;
+            position: absolute;
+            right:50px;
+            top:40%;
+            background-color: transparent;
+            height: 300px;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        .login-btn {
+            width: 50%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 20px;
+            margin-left: 25%;
+        }
+        div h5{
+            color: white;
+            margin-left: 25%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2 class="logo">Steins;Gate</h2>
+        <nav class="navlinks">
+            <a href="signup.html">Home</a>
+            <a href="https://www.youtube.com">Research</a>
+            <a href="https://www.chess.com">Info</a>
+            <a href="https://www.facebook.com">About us</a>
+        </nav>
+        <div class="searchbox">
+            <input type="text" size="40" maxlength="30" placeholder="Search Anything">
+            <button style="font-size:14px ;">Search</button>
+        </div>
+    </header>
+    <section class="para">
+        <h1> Welcome to The <span>Steins;Gate</span></h1>
+        <p> Admission Opened for Future Scientists</p>
+    </section>
+    <div class="login-box">
+        <form>
+            <input type="email" class="input-field" style="margin-bottom: 20px;" placeholder="Enter your email" required><br>
+            <input type="password" class="input-field" style="margin-bottom: 20px;" placeholder="Enter your password" required>
+            <button type="submit" class="login-btn">Login</button>
+            <h5>Not signed up yet?<a href=signup.html>Sign Up</a></h5>
+        </form>
+    </div>
+</body>
+</html>
